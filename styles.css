@@ -1024,3 +1024,15 @@ ul { list-style: none; }
   .hero { padding: 90px 20px 60px; }
   .container { padding: 0 20px; }
 }
+/* Force reveal elements to show in case JS animation fails */
+
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+.reveal.visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
